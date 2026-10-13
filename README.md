@@ -4,13 +4,6 @@ Real-time **panoptic driving perception** — traffic object detection, drivable
 lane-line detection in a single network — running on the **phyBOARD-Pollux** with the on-board
 **NPU** (TFLite + VX delegate), using an INT8-quantized YOLOP model at 320×320.
 
-| Input | Output (YOLOP on phyBOARD-Pollux) |
-|:---:|:---:|
-| ![input 1](doc/input1.gif) | ![output 1](doc/output1.gif) |
-| ![input 2](doc/input2.gif) | ![output 2](doc/output2.gif) |
-
-> Left: raw road video. Right: YOLOP result — vehicle bounding boxes, drivable area and lane lines overlaid.
-
 ---
 
 ## Table of contents
@@ -61,15 +54,12 @@ input with the YOLOP output.
 
 ### Demo 1
 
-| Input | Output |
+| Input | Output (YOLOP on phyBOARD-Pollux) |
 |:---:|:---:|
-| ![input1](doc/input1.gif) | ![output1](doc/output1.gif) |
+| ![input 1](doc/input1.gif) | ![output 1](doc/output1.gif) |
+| ![input 2](doc/input2.gif) | ![output 2](doc/output2.gif) |
 
-### Demo 2
-
-| Input | Output |
-|:---:|:---:|
-| ![input2](doc/input2.gif) | ![output2](doc/output2.gif) |
+> Left: raw road video. Right: YOLOP result — vehicle bounding boxes, drivable area and lane lines overlaid.
 
 What to look for in the output:
 
@@ -247,5 +237,4 @@ in this README are taken from that repository.
 The YOLOP authors in turn thank the works they built on — Multinet, DLT-Net, Faster R-CNN, YOLOv5,
 PSPNet, ENet, SCNN and SAD-ENet.
 
-Thanks also to PHYTEC for the phyBOARD-Pollux hardware and the
-BSP-Yocto-CelebrityFaceMatch-i.MX8MP-v0.7 release image.
+
